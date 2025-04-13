@@ -319,8 +319,7 @@ body {
     max-width: 30px;
     height: auto;
     margin-right: 10px;
-    /* vertical-align: middle; */
-    /* display: block; */
+   
     transition: .2s ease-in;
     cursor: pointer;
   }
@@ -352,12 +351,11 @@ body {
     text-decoration: underline;
   }  
 .footer{
-    position: fixed;
+    position: relative;
     bottom: 1px;
     left: 0;
     /* padding-top: 400px; */
     width: 100%;
-   
     padding: 10px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -365,18 +363,17 @@ body {
     color: #4d4d4e;
     z-index: 1000;
     height: auto;
-    font-weight: 600;
-    
+    font-weight: 600; 
     
 }
-
-
-
 .famous-cities {
-  margin-top: 0rem;
+  margin-top: 0px;
   text-align: center;
   padding: 1rem;
-  border-top: 1px solid #ccc;
+  display: flex; /* or display: grid; */
+  gap: 20px;      /* Adjust the spacing */
+  flex-wrap: wrap;
+  justify-content: center;
   
 }
 
@@ -388,18 +385,19 @@ body {
   margin-top: 20px;
 }
 
-/* .city-card {
-  background: #2A7B9B;
-background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 186, 1) 99%);
-  border-radius: 12px;
-  padding: 20px;
-  
-  width: 200px;
-  height: 200px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  transition: transform 0.2s ease;
-  filter: drop-shadow(0 4px 6px rgba(8, 162, 189, 0.918));
-} */
+.famous-cities-section {
+  padding: 2px;
+  text-align: center;
+  border-top: 1px solid #070606;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+
 
 .city-card {
   background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 186, 1) 99%);
@@ -416,7 +414,9 @@ background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 186, 
   align-items: center;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  filter: drop-shadow(0 4px 6px rgba(8, 162, 189, 0.918));}
+  filter: drop-shadow(0 4px 6px rgba(8, 162, 189, 0.918));
+  margin: 10px;
+}
 
 .city-card:hover {
   transform: translateY(-5px);
@@ -437,7 +437,6 @@ background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 186, 
 
 .city-card {
   display: inline-block;
-  
   width: 200px;
   height: auto ;
   padding: 0px;
@@ -460,22 +459,9 @@ background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 186, 
   margin: 0;
  
 }
-
-
- /* .famous-cities {
-  margin-top: 2rem;
-  padding: 1rem;
-  border-top: 1px solid #ccc;
+.city-cards-container {
+  display: flex; /* or display: grid; */
+  gap: 20px;      /* Adjust the spacing */
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
-.city-card {
-  border: 1px solid #ddd;
-  padding: 1rem;
-  margin: 1rem 0;
-  border-radius: 10px;
-  background: #f9f9f9;
-}
-.city-card img {
-  width: 50px;
-  height: 50px;
-}  */
